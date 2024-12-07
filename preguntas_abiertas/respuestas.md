@@ -68,11 +68,7 @@ En el caso preciso del codigo if (empty($variable)){}, se entiende que si
 #$variable despues de ser evaluada por empty devuelve true proceda a hacer una
 instruccion por especificar. 
 
-# 5. Necesitamos una función php el cual se pase el código postal y nos retorne el mismo
-# código postal con lo siguiente, código postal sin espacios (no puede tener ningún
-# espacio en ninguna posición), si el código postal tiene menos de 5 números
-# entonces completar con 0 al inicio, es decir nos pasan el código 894 entonces
-# deberá retornar 00894, si tiene más de 5 números no agregamos ceros.
+# 5. Funcion en PHP para formatear el codigo postal 
 
 function formatoCodigoPostal($codigoPostal) {
     $codigoPostal = str_replace(' ', '', $codigoPostal); 
@@ -91,12 +87,7 @@ vacia, se valida si $codigoPostal es inferior a 5 en caso que sea asi
 entonces se utiliza str_pad para colocar 0 al inicio de $codigoPostal hasta
 que llegue a 5 de longitud para al final retornar $codigoPostal
 
-# 6. Tenemos el siguiente problema, actualmente tenemos conexión con una API de
-# reservas, esta API nos hace un llamado de crear reserva, nosotros procesamos la
-# solicitud y posteriormente se crea la reserva en nuestro sistema. El problema es que
-# en nuestro servidor entre las 2am y 3am tiene mucha carga y si justo nos hacen un
-# llamado a esta hora esa reserva no va a quedar en nuestro sistema. ¿Qué solución
-# plantearías? explica con tus propias palabras.
+# 6. Solucion carga del servidor entre 2 am y 3 pm 
 
 En este caso para solucionarlo habria que implementar una solucion inmediata que 
 solucionara temporalmente el problema, esto seria algo asi como un Hot fix, no 
