@@ -70,7 +70,8 @@ instruccion por especificar.
 
 # 5. Funcion en PHP para formatear el codigo postal 
 
-function formatoCodigoPostal($codigoPostal) {
+ function formatoCodigoPostal($codigoPostal) {
+    
     $codigoPostal = str_replace(' ', '', $codigoPostal); 
 
     if (strlen($codigoPostal) < 5) {
@@ -78,7 +79,7 @@ function formatoCodigoPostal($codigoPostal) {
     }
 
     return $codigoPostal;
-}
+ }
 
 En la siguiente funcion llamada formatoCodigoPostal se realiza lo pedido, lo primero
 es recibir el codigo postal este seria la variable $codigoPostal, se usa 
