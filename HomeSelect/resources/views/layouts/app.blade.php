@@ -33,10 +33,16 @@
             <a class="nav-link" href="/apartamento/leer">Apartamento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/reserva/crear">Reservas</a>
+              <a class="nav-link" href="/reserva/leer">Reservas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/incidencia/crear">Incidencia</a>
+              <a class="nav-link" href="/incidencia/leer">Incidencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tarea/leer">Tarea</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pago/leer">Pagos</a>
             </li>
           </ul>
         </div>
