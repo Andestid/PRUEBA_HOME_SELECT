@@ -5,6 +5,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\PropietarioController;
 use App\Http\Controllers\ApartamentoController;
 use App\Http\Controllers\ReservaController;
+use App\Http\Controllers\IncidenciaController;
 
 Route::get('/', function () {
     return view('index');
@@ -49,3 +50,13 @@ Route::get('/reserva/leer', [reservaController::class, 'leer'])->name('reserva.l
 Route::put('/reserva/{reserva}', [reservaController::class, 'update'])->name('reserva.update');
 
 Route::delete('/reserva/{id}', [reservaController::class, 'delete'])->name('reserva.delete');
+
+Route::get('/incidencia/crear', [IncidenciaController::class, 'crear'])->name('incidencia.crear');
+
+Route::post('/incidencia/guardar', [incidenciaController::class, 'guardar'])->name('incidencia.guardar');
+
+Route::get('/incidencia/leer', [incidenciaController::class, 'leer'])->name('incidencia.leer');
+
+Route::put('/incidencia/{incidencia}', [incidenciaController::class, 'update'])->name('incidencia.update');
+
+Route::delete('/incidencia/{id}', [incidenciaController::class, 'delete'])->name('incidencia.delete');
