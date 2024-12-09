@@ -30,7 +30,7 @@
             <button 
                     class="btn btn-warning btn-sm" 
                     data-bs-toggle="modal" 
-                    data-bs-target="#modal{{$reservas->id_apartamento}}"
+                    data-bs-target="#modal{{$reservas->id_reserva}}"
                 >Editar</button>
                 @include('reserva.actualizar')
                 <form action="{{ route('reserva.delete', $reservas->id_reserva) }}" method="POST" style="display:inline-block;">
