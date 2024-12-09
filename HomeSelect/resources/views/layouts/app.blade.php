@@ -27,10 +27,13 @@
               <a class="nav-link" href="/cliente/leer">Cliente</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Reservas</a>
+            <a class="nav-link" href="/propietario/leer">Propietario</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Propiedades</a>
+            <a class="nav-link" href="/apartamento/leer">Apartamento</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/reserva/crear">Reservas</a>
             </li>
           </ul>
         </div>
