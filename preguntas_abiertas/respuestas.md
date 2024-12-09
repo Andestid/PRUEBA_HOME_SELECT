@@ -108,6 +108,6 @@ que ya se posee.
 
 # 7. Modelo entidad relacion para el caso de prueba 
 
-![alt text](modelo.png)
+![alt text](modeloMU.png)
 
 Este es el modelo solucion al caso planteado, cuenta con las tablas para los datos requeridos como cliente, apartamento, reserva, propietario y para la generacion de las incidencias asi como las tareas y su costo, el pago solo se genera si el responsable es el propietario. 
